@@ -1,0 +1,65 @@
+:root {
+  --yellow: #faf02d;
+  --red: #ff5425;
+  --black: #05192D;
+  --orange: #FF9700;
+}
+
+body{
+    background-color: var(--yellow);
+    color: var(--red);
+    font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+}
+
+
+h2{
+    margin-top: auto;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+p{
+    margin: 0;
+    font-weight: 200;
+}
+.face{
+    margin-top: auto;
+    max-width: 300px;
+    position: relative;
+}
+
+.circle{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    animation: spin 15s linear infinite;
+}
+
+@keyframes spin {
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.toifel{
+    width: 100%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10vh;
+    box-sizing: border-box;
+}
